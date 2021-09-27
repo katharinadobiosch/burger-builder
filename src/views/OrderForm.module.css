@@ -1,0 +1,55 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em 1em 1em;
+    padding: 1em;
+    border: 16px solid transparent;
+    border-image: 16
+        repeating-linear-gradient(
+            45deg,
+            yellow 0,
+            yellow 1em,
+            /* red 0,
+            red 1em, */ transparent 0,
+            transparent 2em,
+            /* #b67 0,
+            #b67 3em, */ tomato 0,
+            tomato 3em,
+            transparent 0,
+            transparent 4em
+        );
+
+    max-width: 50em;
+}
+
+.input {
+    float: right;
+    width: 60%;
+    margin-bottom: 0.3em;
+}
+
+.block {
+    margin-bottom: 1em;
+}
+
+.label {
+    display: inline-block;
+    /* background: green; */
+    /* height: 3em; */
+    margin-bottom: 0.3em;
+}
+
+.textarea {
+    height: 11vh;
+    resize: none;
+}
+
+.error {
+    display: none;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    color: red;
+    font-size: 0.8em;
+    float: right;
+    width: 60%;
+}

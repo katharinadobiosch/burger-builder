@@ -1,0 +1,29 @@
+.button {
+    font-family: sans-serif;
+    font-weight: bold;
+    /* font: inherit; */
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    border: 7px solid #d8d8d8;
+    background-color: lightgray;
+    color: #ffffff;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.button:hover,
+.button:active {
+    background-color: lightgray;
+    border-color: yellow;
+}
+
+.button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.button.alternative:hover,
+.button.alternative:active {
+    background-color: #ddb3f8;
+}
