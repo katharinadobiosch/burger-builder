@@ -42,6 +42,9 @@ const OrderOverview = (props) => {
         <>
             <div className={styles.flex_container}>
                 {/* <OrderForm onAddUserOrder={addOrderHandler} /> */}
+                <div>
+                    <h1>Your order details</h1>
+                </div>
                 <div className={styles.flex_item}>
                     <OrderList users={usersDataList} />
                 </div>

@@ -274,7 +274,7 @@ const OrderForm = (props) => {
         <>
             {/* HEADING */}
             <div>
-                <h1>Tell me more</h1>
+                <h1>Tell me more about you</h1>
             </div>
             {/* FORM */}
             <form onSubmit={addOrderHandler} className={styles.form}>

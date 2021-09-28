@@ -43,12 +43,10 @@ const PlaceOrder = () => {
         <>
             <div className={styles.flex_container}>
                 <div className={styles.flex_item}>
-                    {" "}
                     <OrderForm onAddUserOrder={addOrderHandler} />
                 </div>
 
                 <div className={styles.flex_item}>
-                    {" "}
                     <OrderList users={usersDataList} />
                 </div>
 

@@ -57,19 +57,7 @@
     padding-left: 5em;
     padding-right: 5em;
     padding-top: 1em;
-    /*     border: 8px solid transparent;
-    border-image: 8
-        repeating-linear-gradient(
-            45deg,
-            yellow 0,
-            yellow 0.5em,
-            transparent 0,
-            transparent 1em,
-            tomato 0,
-            tomato 1.5em,
-            transparent 0,
-            transparent 2em
-        );*/
+  
 
     max-width: 50em;
 }

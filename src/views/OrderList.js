@@ -8,7 +8,7 @@ const OrderList = (props) => {
         <>
             <div className={styles.flex_container}>
                 <div className={styles.flex_item}>
-                    <ul className={styles.list}>
+                    <div className={styles.list}>
                         {props.users.map((user, index) => (
                             <div className={styles.flex_container} key={index}>
                                 <div className={styles.flex_item}>
@@ -24,7 +24,7 @@ const OrderList = (props) => {
                                     {user.street} {user.number}
                                 </div>
                                 <div className={styles.flex_item}>
-                                    {user.zip}
+                                    {user.zip} <span />
                                     {user.city}
                                 </div>
 
@@ -33,7 +33,7 @@ const OrderList = (props) => {
                                 </div>
                             </div>
                         ))}
-                    </ul>
+                    </div>
                 </div>
             </div>
         </>
