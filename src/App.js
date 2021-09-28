@@ -17,11 +17,11 @@ import "../src/css/styles.css";
 const App = () => {
     return (
         <div className="app">
-            <Router basename="/BurgerCreator">
+            <Router basename="/burger-builder">
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route
-                        path="/BurgerCreator"
+                        path="/burger-builder"
                         exact
                         component={BurgerCreator}
                     />

@@ -18,7 +18,7 @@ const Home = () => {
                     <img src={HungryCat} alt="hungry cat" />
                 </div>
                 <div className={styles.flex_item}>
-                    <Link to="/BurgerCreator">
+                    <Link to="/burger-builder">
                         <Button>MEOW</Button>
                     </Link>
                 </div>
