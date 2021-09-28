@@ -16,16 +16,18 @@
 
 .list {
     background-color: tomato;
-    padding: 1rem;
+    width: 50em;
+
+    /* padding: 1rem;
     margin: 2rem auto;
     width: 50vw;
     max-width: 95%;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25); */
 }
 
-.users {
+/* .users {
     margin: 2rem auto;
     width: 90%;
     max-width: 40rem;
@@ -40,4 +42,4 @@
     border: 3px solid #ccc;
     margin: 0.5rem 0;
     padding: 0.5rem;
-}
+} */

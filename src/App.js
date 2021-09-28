@@ -17,7 +17,7 @@ import "../src/css/styles.css";
 const App = () => {
     return (
         <div className="app">
-            <Router>
+            <Router basename="/BurgerCreator">
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route
