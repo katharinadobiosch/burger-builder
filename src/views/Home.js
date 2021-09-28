@@ -13,8 +13,7 @@ const Home = () => {
                 <div className={styles.flex_item}>
                     <h1>Are you hungry?</h1>
                 </div>
-                <div className={styles.flexitem}>
-                    {" "}
+                <div className={styles.flex_item}>
                     <img src={HungryCat} alt="hungry cat" />
                 </div>
                 <div className={styles.flex_item}>

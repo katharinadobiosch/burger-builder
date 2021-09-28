@@ -428,15 +428,9 @@ const OrderForm = (props) => {
                 </div>
 
                 <div>
-                    <Button>ORDER</Button>
+                    <Button>PLACE ORDER</Button>
                 </div>
             </form>
-            {/* ORDER BUTTON >>> BRINGS THE USER TO "/THANKYOU" SITE */}
-            {/* <div>
-                <Link to="/OrderOverview">
-                    <Button>NEXT</Button>
-                </Link>
-            </div> */}
         </>
     );
 };

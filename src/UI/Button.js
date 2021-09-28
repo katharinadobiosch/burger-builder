@@ -3,7 +3,11 @@ import React from "react";
 import styles from "./Button.module.css";
 
 const Button = (props) => {
-    return <button className={styles.button}>{props.children}</button>;
+    return (
+        <button className={styles.button} onClick={props.onAddingData}>
+            {props.children}
+        </button>
+    );
 };
 
 export default Button;

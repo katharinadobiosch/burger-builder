@@ -7,8 +7,9 @@ import OrderForm from "./OrderForm";
 import OrderList from "./OrderList";
 import Button from "../UI/Button";
 
-const PlaceOrder = () => {
+const PlaceOrder = (props) => {
     const [usersDataList, setUserList] = useState([]);
+    const [isVisible, setIsVisible] = useState(false);
 
     const addOrderHandler = (
         userFirstName,
@@ -39,6 +40,10 @@ const PlaceOrder = () => {
         });
     };
 
+    const makeVisibleHandler = () => {
+        setIsVisible(true);
+    };
+
     return (
         <>
             <div className={styles.flex_container}>
@@ -47,7 +52,12 @@ const PlaceOrder = () => {
                 </div>
 
                 <div className={styles.flex_item}>
-                    <OrderList users={usersDataList} />
+                    {!isVisible && (
+                        <OrderList
+                            users={usersDataList}
+                            onAddingData={makeVisibleHandler}
+                        />
+                    )}
                 </div>
 
                 <div className={styles.flex_item}>
