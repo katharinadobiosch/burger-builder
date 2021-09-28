@@ -17,27 +17,19 @@ import "../src/css/styles.css";
 const App = () => {
     return (
         <div className="app">
-            <Router>
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route
-                        path="/BurgerCreator"
-                        exact
-                        component={BurgerCreator}
-                    />
-                    <Route path="/OrderForm" exact component={OrderForm} />
-                    <Route path="/ThankYou" exact component={ThankYou} />
-                    <Route path="/PlaceOrder" exact component={PlaceOrder} />
-                    <Route
-                        path="/OrderOverview"
-                        exact
-                        component={OrderOverview}
-                    />
+            <Router basename="/BurgerCreator">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/BurgerCreator" exact component={BurgerCreator} />
+          <Route path="/OrderForm" exact component={OrderForm} />
+          <Route path="/ThankYou" exact component={ThankYou} />
+          <Route path="/PlaceOrder" exact component={PlaceOrder} />
+          <Route path="/OrderOverview" exact component={OrderOverview} />
 
-                    {/* <Route path="*" component={NotFound}/> */}
-                </Switch>
-            </Router>
-        </div>
+          {/* <Route path="*" component={NotFound}/> */}
+        </Switch>
+      </Router>
+    </div>
     );
 };
 
