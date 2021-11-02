@@ -61,14 +61,14 @@ const PlaceOrder = (props) => {
                 </div>
 
                 <div className={styles.flex_item}>
-                    <Link to="/OrderOverview">
+                    <Link
+                        to={`/OrderOverview?payload=${JSON.stringify(
+                            usersDataList
+                        )}`}
+                    >
                         <Button>NEXT</Button>
                     </Link>
                 </div>
-
-                <div className={styles.flex_item}></div>
-
-                <div className={styles.flex_item}></div>
             </div>
         </>
     );

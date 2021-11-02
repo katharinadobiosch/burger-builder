@@ -22,7 +22,8 @@
     font-weight: bold;
     /* font: inherit; */
     cursor: pointer;
-    padding: 0.25rem 1rem;
+    /* padding: 0.25rem 1rem; */
+    width: 2.5rem;
     border: 3.5px solid #d8d8d8;
     background-color: lightgray;
     color: #ffffff;
@@ -57,7 +58,6 @@
     padding-left: 5em;
     padding-right: 5em;
     padding-top: 1em;
-  
 
     max-width: 50em;
 }
