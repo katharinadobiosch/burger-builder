@@ -1,8 +1,8 @@
 {
+    "homepage": "http://katharinadobiosch.github.io/burger-builder",
     "name": "burger-builder",
     "version": "0.1.0",
     "private": true,
-    "homepage": "http://katharinadobiosch.github.io/burger-builder",
     "dependencies": {
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^11.2.7",
