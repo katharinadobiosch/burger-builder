@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/burger-builder/static/css/main.87a85e4c.chunk.css",
-    "main.js": "/burger-builder/static/js/main.7f1d2bad.chunk.js",
-    "main.js.map": "/burger-builder/static/js/main.7f1d2bad.chunk.js.map",
+    "main.css": "/burger-builder/static/css/main.9524b0c9.chunk.css",
+    "main.js": "/burger-builder/static/js/main.5713dd17.chunk.js",
+    "main.js.map": "/burger-builder/static/js/main.5713dd17.chunk.js.map",
     "runtime-main.js": "/burger-builder/static/js/runtime-main.8fc8a57d.js",
     "runtime-main.js.map": "/burger-builder/static/js/runtime-main.8fc8a57d.js.map",
     "static/js/2.9dc14b05.chunk.js": "/burger-builder/static/js/2.9dc14b05.chunk.js",
     "static/js/2.9dc14b05.chunk.js.map": "/burger-builder/static/js/2.9dc14b05.chunk.js.map",
     "index.html": "/burger-builder/index.html",
-    "static/css/main.87a85e4c.chunk.css.map": "/burger-builder/static/css/main.87a85e4c.chunk.css.map",
+    "static/css/main.9524b0c9.chunk.css.map": "/burger-builder/static/css/main.9524b0c9.chunk.css.map",
     "static/js/2.9dc14b05.chunk.js.LICENSE.txt": "/burger-builder/static/js/2.9dc14b05.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8fc8a57d.js",
     "static/js/2.9dc14b05.chunk.js",
-    "static/css/main.87a85e4c.chunk.css",
-    "static/js/main.7f1d2bad.chunk.js"
+    "static/css/main.9524b0c9.chunk.css",
+    "static/js/main.5713dd17.chunk.js"
   ]
 }
