@@ -41,7 +41,7 @@ const PlaceOrder = (props) => {
     };
 
     const makeVisibleHandler = () => {
-        setIsVisible(true);
+        setIsVisible(false);
     };
 
     return (
@@ -52,7 +52,7 @@ const PlaceOrder = (props) => {
                 </div>
 
                 <div className={styles.flex_item}>
-                    {!isVisible && (
+                    {isVisible && (
                         <OrderList
                             users={usersDataList}
                             onAddingData={makeVisibleHandler}
