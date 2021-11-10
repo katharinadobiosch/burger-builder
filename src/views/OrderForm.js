@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+
 import Button from "../UI/Button";
 import styles from "./OrderForm.module.css";
 
@@ -14,6 +14,18 @@ const OrderForm = (props) => {
     const [enteredZip, setEnteredZip] = useState("");
     const [enteredComment, setEnteredComment] = useState("");
 
+    const [state, setState] = useState({
+        firstName: "",
+        lastName: "",
+        phone: "",
+        email: "",
+        street: "",
+        number: "",
+        city: "",
+        zipCode: "",
+        comments: "",
+    });
+
     const firstNameError = React.createRef();
     const lastNameError = React.createRef();
     const phoneError = React.createRef();
@@ -26,6 +38,9 @@ const OrderForm = (props) => {
 
     // BASED ON USERS INPUT THE STATE IS UPDATING
     const userDataChangeHandler = (event) => {
+        const { name, value } = event.target;
+        setState((prevState) => ({ ...prevState, [name]: value }));
+
         switch (event.target.name) {
             case "firstName":
                 setEnteredFirstName(event.target.value);
@@ -228,6 +243,8 @@ const OrderForm = (props) => {
 
     const addOrderHandler = (event) => {
         event.preventDefault();
+
+        props.history.push({ pathname: "/OrderOverview", state });
         console.log("button was clicked");
 
         // console.log(
@@ -258,16 +275,16 @@ const OrderForm = (props) => {
             setEnteredComment("");
         }
 
-        props.onAddUserOrder(
-            enteredFirstName,
-            enteredLastName,
-            enteredPhone,
-            enteredEmail,
-            enteredStreet,
-            enteredNumber,
-            enteredCity,
-            enteredZip
-        );
+        // props.onAddUserOrder(
+        //     enteredFirstName,
+        //     enteredLastName,
+        //     enteredPhone,
+        //     enteredEmail,
+        //     enteredStreet,
+        //     enteredNumber,
+        //     enteredCity,
+        //     enteredZip
+        // );
     };
 
     return (
@@ -428,7 +445,10 @@ const OrderForm = (props) => {
                 </div>
 
                 <div>
-                    <Button>PLACE ORDER</Button>
+                    {/* <Link to="/OrderOverview">
+                        <Button>PLACE ORDER</Button>
+                    </Link> */}
+                    <Button type="submit">PLACE ORDER</Button>
                 </div>
             </form>
         </>

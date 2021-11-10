@@ -257,7 +257,7 @@ const BurgerCreator = (props) => {
                     </form>
                 </div>
                 <div>
-                    <Link to="/PlaceOrder">
+                    <Link to="/OrderForm">
                         <Button>ORDER</Button>
                     </Link>
                 </div>

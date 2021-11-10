@@ -20,6 +20,8 @@
         );
 
     max-width: 50em;
+    background-color: green;
+    /* padding-bottom: 10em; */
 }
 
 .input {
