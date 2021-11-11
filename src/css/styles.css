@@ -23,6 +23,8 @@ body {
     background-color: pink;
     min-width: 50vw;
     min-height: 50vh;
+    /* margin-bottom: 1em; */
+    padding-bottom: 0.5em;
     /* align-self: center; */
 }
 
