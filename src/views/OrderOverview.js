@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// import OrderForm from "./OrderForm";
 import Button from "../UI/Button";
 import styles from "./OrderOverview.module.css";
 
@@ -17,41 +16,6 @@ const OrderOverview = (props) => {
         zipCode,
         comments,
     } = (props.location && props.location.state) || {};
-
-    // const [usersDataList, setUserList] = useState([]);
-    // const q = new URLSearchParams(useLocation().search);
-    // useEffect(() => {
-    //     const userData = JSON.parse(q.get("payload"));
-    //     setUserList(userData);
-    // }, []);
-    // const addOrderHandler = (
-    //     userFirstName,
-    //     userLastName,
-    //     userPhone,
-    //     userEmail,
-    //     userStreet,
-    //     userNumber,
-    //     userCity,
-    //     userZip,
-    //     userComment
-    // ) => {
-    //     setUserList((prevUsersList) => {
-    //         return [
-    //             ...prevUsersList,
-    //             {
-    //                 firstName: userFirstName,
-    //                 lastName: userLastName,
-    //                 phone: userPhone,
-    //                 email: userEmail,
-    //                 street: userStreet,
-    //                 number: userNumber,
-    //                 city: userCity,
-    //                 zip: userZip,
-    //                 comment: userComment,
-    //             },
-    //         ];
-    //     });
-    // };
 
     return (
         <>
